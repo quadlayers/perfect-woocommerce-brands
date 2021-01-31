@@ -28,6 +28,8 @@ defined('ABSPATH') or die('No script kiddies please!');
 
       </a>
 
+      <?php if( $description && !empty($brand->description) ) echo '<div>'.do_shortcode($brand->description).'</div>';?>
+
     <?php endforeach; ?>
 
   </div>
